@@ -1,0 +1,26 @@
+
+
+<div class="login-container">
+    <form  class="login-form" >
+        <!-- (ngSubmit)="userLogin()" -->
+        <h2>Login</h2>
+        <div class="form-group">
+            <label for="email" class="login-from-label">Email</label>
+            <input type="email" name="email" class="login-email" id="email" placeholder="Enter your email" >
+            <!-- [(ngModel)]="loginObj.email" -->
+        </div>
+        <div class="form-group">
+            <label for="password" class="login-from-label">Password</label>
+            <input type="password" name="password" class="login-password" id="password" placeholder="Enter your password">
+            <!--  [(ngModel)]="loginObj.password" -->
+        </div>
+
+        <button type="button"  class="login-button">Sign In</button>
+        <!--   (click)="userLogin()" -->
+        <a class="forgot-link" href="#">Forgot your password?</a>
+      
+    <button type="button" class="switchTo" >Switch to Register</button>
+    <!-- (click)="switchToRegister('register')" -->
+
+    </form>
+</div> 
