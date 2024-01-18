@@ -1,0 +1,41 @@
+
+ <div class="register-container">
+   <form #registerForm="ngForm" class="register-form" (ngSubmit)="onSubmit(registerForm)">
+    <h2>Register</h2>
+
+
+    <div class="form-group">
+      <label for="name" class="register-from-label">Name</label>
+      <input type="text" [(ngModel)]="registerForm.value.name" name="name" class="register-email" id="name" placeholder="Enter your name" required >
+    </div>
+  
+
+  
+    <div class="form-group">
+      <label for="email" class="register-from-label">Email</label>
+      <input type="email" [(ngModel)]="registerForm.value.email" name="email" class="register-email" id="email" placeholder="Enter your email" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="password" class="register-from-label">Password</label>
+      <input type="password" [(ngModel)]="registerForm.value.password" name="password" class="register-password" id="password" placeholder="Enter your password" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="passwordconfirm" class="register-from-label">Confirm Password</label>
+      <input type="password" [(ngModel)]="registerForm.value.passwordconfirm" name="passwordconfirm" class="register-password" id="passwordconfirm" placeholder="Enter your password again" required >
+    </div>
+
+ 
+     <mat-slide-toggle [(ngModel)]="registerForm.value.type" color="#4A8AF4">Firm Account?</mat-slide-toggle>
+
+
+      <button type="submit" class="register-button" [disabled]="registerForm.invalid">Register</button>
+
+      <button type="button" routerLink="/login" class="switchTo" >Switch to Login</button>
+
+    </form>
+
+
+ 
+</div>

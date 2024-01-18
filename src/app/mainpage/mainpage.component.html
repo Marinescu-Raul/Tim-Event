@@ -1,0 +1,55 @@
+<router-outlet></router-outlet>
+<div class="content">
+
+  <div class="wrapper">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typescript/4.5.2/typescript.min.js"></script>
+    <!-- Navbar -->
+    <div class="navbar" [ngClass]="{'fixed-navbar': shouldFixNavbar()}">
+      <img src="assets/img/logo2023.png" alt="Logo" class="logo">
+      <div class="nav-item" routerLink="/events">Events</div>
+      <div class="nav-item" routerLink="/about">About Timisoara</div>
+      <div class="nav-item" routerLink="/attractions">Attractions</div>
+      <div class="nav-item" routerLink="/contact">Add Event</div>
+    </div>
+
+    <div class="container">
+      <!-- Your existing content -->
+    </div>
+
+
+    <div #myPhoto class="photo-container" [ngStyle]="containerStyle">
+      <div class="overlay-container">
+        <h2>Timisoara</h2>
+        <p>European Capital of Culture</p>
+        <!-- Logo -->
+
+      </div>
+      <div class="left-arrow" (click)="changePhoto('previous')"></div>
+      <div class="right-arrow" (click)="changePhoto('next')"></div>
+    </div>
+
+
+
+
+    <!-- City information -->
+
+    <div class="bar"></div>
+  
+    <h2 margin-bottom="20px" back>Events</h2>
+
+
+      <div class="container">
+        <div class="component" *ngFor="let card of cards" (click)="navigateToDetails(card)">
+          <div class="event-container">
+            <img src={{card.path}} alt="Logo" class="event-image">
+            <div class="eventoverlay-container1">
+              <div class="event-containerh2">{{card.name}}</div>
+              <div class="event-containerp">Date: {{ card.startDate.toString().slice(0, 10) }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button  routerLink="/login" class="logout-button" onclick="logout()">Logout</button>
+    </div>
+  </div>

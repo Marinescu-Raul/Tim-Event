@@ -1,0 +1,187 @@
+.wrapper {
+  max-width: 1000px;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to right, #38517042, #142d4c41);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Centers the content horizontally */
+  margin-bottom: 10px
+}
+
+.navbar {
+  background: linear-gradient(to right, #385170, #142d4c);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 80px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px; /* Add some space at the bottom */
+}
+
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  z-index: 1000;
+}
+
+.bar {
+  background: linear-gradient(to right, #385170, #142d4c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 80px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+ 
+}
+
+.nav-item {
+  cursor: pointer;
+  padding: 25px 35px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase; /* Convert text to uppercase */
+  
+}
+
+.nav-item-button {
+  cursor: pointer;
+  padding: 25px 35px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase; /* Convert text to uppercase */
+  background-color: #1D6A96;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.city-info {
+
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: auto;
+}
+
+
+
+.photo-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden; /* Ensure the overlay doesn't extend beyond the photo container */
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  text-align: left;
+  border-radius: 0;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #fff;
+  padding: 10px; /* Adjust as needed for spacing inside the overlay */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+
+.overlay-container h2 {
+  font-size: 20px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 45px;
+  left: 20px;
+  margin: 0;
+}
+
+.overlay-container p {
+  font-size: 16px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+}
+
+/* Existing styles for photo container, overlay, etc. */
+
+.circle-container {
+  position: absolute;
+  bottom: 10px; /* Adjust the distance from the bottom */
+  right: 350px; /* Adjust the distance from the right */
+  width: 100px; /* Adjust the size of the circle */
+  height: 70px; /* Adjust the size of the circle */
+  border-radius: 50%;
+  background:linear-gradient(to right, #385170, #142d4c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px; /* Adjust the font size as needed */
+  color: black; /* Adjust the text color */
+}
+
+.overlay-container h1 {
+  font-size: 16px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 20px;
+  left: 830px;
+  margin: 0;
+  
+}
+
+.overlay-container h3 {
+  font-size: 16px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 45px;
+  left: 830px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+
+
+.event-description-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: justify;
+  text-indent: 30px;
+}
+
+.event-description-container h2 {
+  color: #333;
+  font-size: 24px;
+  text-align: justify;
+}
+

@@ -1,0 +1,370 @@
+body {
+  background-image: url('../../assets/img/Timisoara1.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+/* Blur effect */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(8px); /* Adjust the blur amount as needed */
+}
+
+/* Fade overlay */
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the fade */
+}
+
+/* Your additional styles for content */
+/* For example: */
+.content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the overlay */
+  color: white; /* Set text color to be visible on the background */
+  padding: 20px;
+}
+
+
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Light grey background for the entire page 
+} */
+
+.wrapper {
+  max-width: 1000px;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to right, #38517042, #142d4c41);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Centers the content horizontally */
+  margin-bottom: 10px
+}
+
+.navbar {
+  background: linear-gradient(to right, #385170, #142d4c);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 80px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px; /* Add some space at the bottom */
+}
+
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  z-index: 1000;
+}
+
+.bar {
+  background: linear-gradient(to right, #385170, #142d4c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 80px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+ 
+}
+
+.nav-item {
+  cursor: pointer;
+  padding: 25px 35px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase; /* Convert text to uppercase */
+  
+}
+
+.nav-item-button {
+  cursor: pointer;
+  padding: 25px 35px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase; /* Convert text to uppercase */
+  background-color: #1D6A96;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.city-info {
+
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: auto;
+}
+
+/* Specific styles for event and content */
+
+
+.photo-container {
+  position: relative;
+  height: 100vh; /* Set the height as needed */
+  /* background-size: cover; */
+  background-position: center;
+  width: 800px;
+  min-width: 300;
+  margin: 0 auto;
+  text-align: center;
+   background-color: #f7f7f7;
+   background-image: url("../../assets/img/Timisoara1.jpg");
+   margin-bottom: 10px
+}
+
+.photo {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease; /* Add transition property for opacity */
+}
+
+/* my-city-events.component.css */
+
+
+
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 30px; /* Adjust arrow height */
+  width: 30px; /* Adjust arrow width */
+  background-color: #567ead; /* Arrow background color */
+  cursor: pointer;
+  z-index: 1;
+  outline-color: black;
+  opacity: 1;
+}
+.left-arrow:hover,
+.right-arrow:hover {
+  background: #268cc7;
+  transform: translateY(-50%) scale(1.1); /* Make the arrow 20% larger on hover */
+  height: 30px; /* Adjust arrow height on hover */
+  width: 30px; /* Adjust arrow width on hover */
+}
+
+.left-arrow {
+  left: 10px; /* Adjust position of left arrow */
+  clip-path: polygon(100% 0%, 0% 50%, 100% 100%);
+}
+
+.right-arrow {
+  right: 10px; /* Adjust position of right arrow */
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+}
+
+
+.overlay-container {
+  
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient( rgba(0, 0, 0, 0), rgb(0, 0, 0, 1));
+  
+  text-align: left;
+  border-radius: 0px;
+  box-shadow: 5 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  
+  /*outline: 1px solid #000000;  Adjust color and width as needed */
+}
+
+
+.overlay-container h2 {
+  font-size: 20px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 35px;
+  left: 10px;
+  margin: 0;
+}
+
+.overlay-container p {
+  font-size: 16px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin: 0;
+}
+
+.logo {
+  display: block;
+  margin: 10px auto; /* Adjust margin as needed */
+  width: 100px;
+  height: auto;
+}
+
+
+/* mainpage.component.css */
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.component {
+  position: relative;
+  width: 30%; /* Three elements per row by default */
+  margin-bottom: 60px;
+  box-sizing: border-box;
+  overflow: hidden; /* Ensure the overlay doesn't overflow */
+}
+
+.event-container {
+  position: relative;
+}
+
+.event-container::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Adjust the overlay width as needed */
+  height: 50%;
+  background: linear-gradient( rgba(0, 0, 0, 0), rgb(0, 0, 0, 1));
+}
+
+.event-containerh2
+{
+  font-size: 15px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  margin: 0;
+}
+.event-container:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+.event-containerp {
+  font-size: 12px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin: 0;
+}
+
+.event-container img {
+  width: 100%;
+  height: 100%; /* Ensure the photo covers the entire container */
+  object-fit: cover; /* Maintain the aspect ratio without stretching */
+}
+
+.event-name {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Media query for smaller screens - 2 elements per row */
+@media (max-width: 1200px) {
+  .component {
+    width: 48%; /* Two elements per row */
+  }
+}
+
+/* Media query for even smaller screens - 1 element per row */
+@media (max-width: 800px) {
+  .component {
+    width: 100%; /* One element per row */
+  }
+}
+
+/* Dynamic adjustment for a specific number of elements */
+@media (min-width: 801px) and (max-width: 1200px) {
+  .container {
+    justify-content: space-around;
+  }
+
+  .component {
+    width: calc(50% - 20px); /* Two elements per row */
+  }
+}
+
+/* Dynamic adjustment for a specific number of elements */
+@media (min-width: 481px) and (max-width: 800px) {
+  .container {
+    justify-content: space-around;
+  }
+
+  .component {
+    width: calc(50% - 20px); /* Two elements per row */
+  }
+}
+
+/* Dynamic adjustment for a specific number of elements */
+@media (max-width: 480px) {
+  .component {
+    width: 100%; /* One element per row */
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.custom-class {
+  animation: fadeIn 0.2s ease-in;
+}
+
+h2{
+  color: black;
+}
+.logout-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(to right, #385170, #142d4c);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background: linear-gradient(to right, #1b2430, #030c18);
+}

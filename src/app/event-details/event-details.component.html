@@ -1,0 +1,33 @@
+<router-outlet></router-outlet>
+<div class="content">
+<div class="wrapper">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typescript/4.5.2/typescript.min.js"></script>
+<!-- Navbar -->
+<div class="navbar" >
+  <img src="assets/img/logo2023.png" alt="Logo" class="logo">
+  <div class="nav-item" routerLink="/mainpage">Events</div>
+  <div class="nav-item" routerLink="/about">About Timisoara</div>
+  <div class="nav-item" routerLink="/attractions">Attractions</div>
+  <div class="nav-item" routerLink="/contact">Add Event</div>
+</div>
+
+
+  <div class="photo-container">
+    <img src={{selectedCard.path}} alt="Event Photo" class="photo">
+    <div class="overlay-container">
+      <h2>{{ selectedCard.name }}</h2>
+      <p>{{ selectedCard.location }}</p>
+      <h3>Start Date: {{ selectedCard.startDate.toString().slice(0, 10) }}</h3>
+      <h1>End Date: {{ selectedCard.startDate.toString().slice(0, 10) }}</h1>
+
+
+    </div>
+  </div>
+
+  <div class="event-description-container">
+    <h2>{{ selectedCard.name }}</h2>
+    <p>{{ selectedCard.description }}</p>
+  </div>
+
+
+</div>

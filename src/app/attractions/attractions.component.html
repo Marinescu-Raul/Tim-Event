@@ -1,0 +1,31 @@
+<router-outlet></router-outlet>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="wrapper">
+<!-- Display the list of attractions here -->
+
+<div class="navbar">
+    <img src="assets/img/logo2023.png" alt="Logo" class="logo">
+    <div class="nav-item" routerLink="/mainpage">Events</div>
+    <div class="nav-item" routerLink="/about">About Timisoara</div>
+    <div class="nav-item" routerLink="/attractions">Attractions</div>
+    <div class="nav-item" routerLink="/contact">Add Event</div>
+  </div>
+<!-- Include the MapComponent within the AttractionsComponent template -->
+<div class="main-container">
+<div class="mapp" id="google-map"  ></div>
+  <div  class="w3-animate-opacity" id="details-container" *ngIf="selectedAttraction">
+    <div class="photo-container">
+      <div class="overlay">
+        <p>{{ selectedAttraction.name }}</p>
+      </div>
+      <img [src]="selectedAttraction.image" alt="{{ selectedAttraction.name }}">
+    </div>
+    <div class="description-container">
+    <h3 >{{ selectedAttraction.description }}</h3>
+ </div>
+</div>
+</div>
+
+
+</div>

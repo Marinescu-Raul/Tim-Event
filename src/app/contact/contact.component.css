@@ -1,0 +1,315 @@
+/* contact.component.css */
+
+/* Stilizare pentru formularul de contact */
+
+.wrapper {
+  max-width: 1000px;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to right, #38517042, #142d4c41);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Centers the content horizontally */
+  margin-bottom: 30px;
+  padding-bottom:77px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Stilizare pentru etichetele de input */
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Stilizare pentru input-uri */
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Stilizare pentru butonul de trimitere */
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Stilizare pentru butonul de trimitere la hover */
+  button:hover {
+    background-color: #45a049;
+  }
+  
+
+  .navbar {
+    background: linear-gradient(to right, #1D6A96, #268cc7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 80px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px; /* Add some space at the bottom */
+  }
+  
+  .bar {
+    background: linear-gradient(to right, #1D6A96, #268cc7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 80px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+   
+  }
+  
+  .nav-item {
+    cursor: pointer;
+    padding: 25px 35px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase; /* Convert text to uppercase */
+    
+  }
+  
+  .nav-item-button {
+    cursor: pointer;
+    padding: 25px 35px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase; /* Convert text to uppercase */
+    background-color: #1D6A96;
+  }
+  
+  .nav-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .city-info {
+  
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+  }
+
+
+  .navbar {
+    background: linear-gradient(to right, #385170, #142d4c);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 80px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px; /* Add some space at the bottom */
+  }
+  
+  
+  .fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    z-index: 1000;
+  }
+  
+  .bar {
+    background: linear-gradient(to right, #385170, #142d4c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 80px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+   
+  }
+  
+  .nav-item {
+    cursor: pointer;
+    padding: 25px 35px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase; /* Convert text to uppercase */
+    
+  }
+  
+  .nav-item-button {
+    cursor: pointer;
+    padding: 25px 35px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase; /* Convert text to uppercase */
+    background-color: #1D6A96;
+  }
+  
+  .nav-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .city-info {
+  
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+  }
+  /* Basic styling for form controls */
+/* Basic styling for form controls */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Additional styling for focused form controls */
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Styling for form groups */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* Styling for labels */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/* Styling for buttons */
+button {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+/* Styling for buttons on hover and focus */
+button:hover, button:focus {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Styling for the form itself */
+form {
+  max-width: 400px; /* Adjust the max-width as needed */
+  margin: auto;
+  padding: 20px;
+}
+
+
+.custab{
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 10% 0;
+  box-shadow: 3px 3px 2px #ccc;
+  transition: 0.5s;
+  }
+.custab:hover{
+  box-shadow: 3px 3px 0px transparent;
+  transition: 0.5s;
+  }
+
+
+
+#custom-search-input {
+margin:0;
+margin-top: 24px;
+padding: 2px;
+}
+.col-md-12 {
+width: 62%;
+}
+#custom-search-input .search-query {
+padding-right: 3px;
+padding-right: 4px \9;
+padding-left: 3px;
+padding-left: 4px \9;
+/* IE7-8 doesn't have border-radius, so don't indent the padding /
+
+margin-bottom: 0;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 43px;
+}
+
+#custom-search-input button {
+border: 0;
+background: none;
+/** belows styles are working good/
+padding: 2px 5px;
+margin-top: 2px;
+position: relative;
+left: -28px;
+/* IE7-8 doesn't have border-radius, so don't indent the padding */
+margin-bottom: 0;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+color:green;
+}
+
+.search-query:focus + button {
+z-index: 3;
+}
+.input-group {
+position: relative;
+display: table;
+border-collapse: separate;
+padding-right: 0px;
+padding-left: 183px;
+}
